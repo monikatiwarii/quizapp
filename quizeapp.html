@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+</head>
+<body>
+
+<style>
+	.container-fluid{
+    margin: 20px auto;
+	padding-left: 0%;
+    width: 60%;
+    height: 85%;
+	border-radius: 45px;
+	box-shadow: cadetblue;
+    background-color: darkcyan;
+}
+.containerwhite{
+	width:60%;
+	margin: 20px auto;
+	height:60%;
+	padding-left: 0%;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	box-shadow: grey;
+}
+button{
+    padding:  6px 12px;
+    margin-left: 42%;
+	margin-bottom: 5%;
+    width: 20%;
+	border-radius: 30px;
+    margin-top: 20px;
+    height: 40px;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3,input{
+    margin-left: 30px;
+}
+h1{
+    padding-top: 20px;
+}
+</style>
+
+
+
+    <br>
+<br>
+  
+    <div class="container-fluid">
+    <form name="quiz" onsubmit="return ready()">
+<h1 align="center">Simple Quiz Application</h1>
+<h3 class="result" align="center">Your Score :<span class="fa">0</span></h3>
+<hr>
+<div class="containerwhite">
+<h3>What is HTML ?</h3><hr>
+	<input type="radio" name="q1" value="a" id="q1a">Scripting Language<br />
+	<input type="radio" name="q1" value="b" id="q1b">Programming Language<br />
+	<input type="radio" name="q1" value="c" id="q1c">Backend Language<br />
+	<input type="radio" name="q1" value="d" id="q1d">None<br />
+</div>
+<div class="containerwhite">
+	<h3>CSS use for ?</h3><hr>
+	<input type="radio" name="q2" value="a" id="q2a">Designing<br />
+	<input type="radio" name="q2" value="b" id="q2b">Backend<br />
+	<input type="radio" name="q2" value="c" id="q2c">Structuring<br />
+	<input type="radio" name="q2" value="d" id="q2d">None<br />
+</div>
+
+<div class="containerwhite">
+	<h3>The HTML document contains a root tag called ____</h3><hr>
+<input type="radio" name="q3" value="a" id="q3a"> Head <br/>
+<input type="radio" name="q3" value="b" id="q3b"> Title <br/>
+<input type="radio" name="q3" value="c" id="q3c"> Body<br/>
+<input type="radio" name="q3" value="d" id="q3d">Html<br />
+</div>
+<div class="containerwhite">
+	<h3>Choose the correct HTML tag for a large title.</h3><hr>
+<input type="radio" name="q4" value="a" id="q4a"> H1 <br/>
+<input type="radio" name="q4" value="b" id="q4b"> Heading <br/>
+<input type="radio" name="q4" value="c" id="q4c"> Head<br/>
+<input type="radio" name="q4" value="d" id="q4d">H6<br />
+</div>
+<div class="containerwhite">
+	<h3>If we want to use a nice green dotted border around an image, which css property are we going to use?</h3><hr>
+<input type="radio" name="q5" value="a" id="q5a"> border-line
+<br/>
+<input type="radio" name="q5" value="b" id="q5b"> border-style<br/>
+<input type="radio" name="q5" value="c" id="q5c">border-decoration<br/>
+<input type="radio" name="q5" value="d" id="q5d">border-color<br />
+</div>
+<div>
+	<button type="submit" >Submit</button>
+</div>
+
+
+
+    </form>
+    </div>
+    <script src="quizjs.js">
+</script>
+</body>
+</html>
